@@ -1,0 +1,250 @@
+* { /*reset do css*/
+    margin: 0;
+    padding: 0;
+}
+/* fundo da pagina*/
+#bodypag1 {
+    margin: 0;
+    padding: 0;
+    height: 350vh;
+    background: linear-gradient(to bottom, #0f0d0d, #333300, #666600);
+
+}
+   
+html {  /* comportamento do scroll*/
+    scroll-behavior: smooth;
+    scroll-padding-top: 20vh;
+}
+
+#menu-horizontal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+}
+/* lista nao ordenada - fundo do menu*/
+#menu-horizontal ul {
+    list-style: none;
+    background-color: black;
+    text-align: center;
+}
+/* Menu(disposiçãão dos elementos do menu)*/
+#menu-horizontal li {
+      display: inline-block;
+}
+/* texto dent*o do menu */
+
+#menu-horizontal a {
+    font-family: "New Rocker", system-ui;
+    color: yellow;
+    text-decoration: none;
+    padding: 1.5rem; /* distancia */
+    display: inline-block;
+    transition: background 1s;
+    font-size: 1.25rem; 
+
+}
+
+/* fundo da pagina*/
+.tituloprincipal {
+    width: 100%;
+    height: 50rem;
+    background-image: url(./fundocortado.png);
+    background-size: cover;/*contra distorção */
+    background-position: center;
+    background-repeat: no-repeat;/* evitar que a imagem do fundo repita*/
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
+
+}
+.titulocentral {  /* apenas o texto dentro da imagem principal 1pagina */
+    color: yellow;
+    font-family: "New Rocker", system-ui;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase; 
+
+}
+.titulodesessao {
+    text-transform: uppercase;
+    color: yellow;
+    font-family: "New Rocker", system-ui;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+.paragrafo{ /* para todos os paragrafos*/
+    color: white;
+    font-family: "New Rocker", system-ui;
+    font-size: medium;
+    text-align: center;
+}
+
+
+#sessaomenu {  /* tamanho da sessaomenu*/
+   width: 100%;
+   height: 100vh;
+   
+}
+
+.slogan {/*arredondando os slogas*/
+    border-radius: 20%;
+}
+
+
+
+#sessaohistoria {
+    margin-top: 5rem;
+    width: 100%;
+    height: 40vh ;   
+}
+
+#paragrafosessaohistoria{
+    text-align: justify ;
+    font-size: 1.25rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+
+
+#sessaobandas{
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 40vh ;
+}
+#sloganbandas {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+
+}
+#buttonslogan {/*centralizando o botao*/
+    margin-left: 47.7%;
+    margin-top: 3rem;
+}
+
+
+
+#sessaosobre{
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 20vh ;
+}
+#sobre {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1.25rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+#paragrafosobre{
+    text-align: right;
+    font-size: 1.25rem;
+    margin-bottom: 5rem;
+}
+
+#imagemsobre{
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+
+#botaotopo{
+    font-family: "New Rocker", system-ui;
+    margin-left: 48%;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+
+
+/*PAGINA 2 - CSS*/
+#bodypag2{
+    margin: 0;
+    padding: 0;
+    height: 430vh;
+    background: linear-gradient(to bottom, #0f0d0d, #333300, #666600);
+}
+/* fundo da pagina*/
+.tituloprincipalalbum{
+    width: 100%;
+    height: 50rem;
+    background-image: url(./fundoalbum.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#titulocentralalbum{
+    color: white;
+    font-family: "New Rocker", system-ui;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+#sessaoanthrax{
+    margin-top: 2rem;
+}
+
+.albumsmargempag2{
+    margin-top: 10rem;
+}
+
+.card{
+    color: white;
+    font-family: "New Rocker", system-ui;
+    font-size: 1.25rem;
+    text-align: center;/*porra*/
+}
+
+.imagemlink{
+    border-radius: 50%;
+}
+
+.descricaoalbums{
+    color: white;
+    font-family: "New Rocker", system-ui;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    
+}
+#botaotopopag2{
+    font-family: "New Rocker", system-ui;
+    margin-left: 48%;
+    margin-top: 5rem;
+    text-decoration: none;
+}
